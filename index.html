@@ -1,33 +1,136 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-   <title>My Personal WebPage</title>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css">
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<style>
+
+/* START VIEWPORT SECTION*/
+@media only screen and (max-width:800px)
+{
+  header{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    
+    height: 2vw;
+    padding: 25px 0px;
+    
+    display: flex;
+    justify-conent: space-between;
+    align-items: center;
+    
+    background-color: black;
+    opacity: 0.7;
+    
+    z-index: 5;
+  }
+}
+/* END VIEWPORT SECTION*/
+
+/*START WELCOME SECTION*/
+#welcome-section{
+  width:100%;
+  height:100vh;
+  
+  position: absolute;
+  top: 10vh;
+  left: 0vh;
+  z-index: 2;
+}
+
+#welcome-section h1{
+  text-align:left;
+  font-size:3vw;
+  color: silver;
+  
+  position: absolute:
+ top: 5vw;
+  left: 7vw;
+}
+
+#welcome-section h2{
+  text-align: left;
+  font-size: 4vw;
+  color: white;
+  
+  position: absolute;
+  top: 10vw;
+  left:7vw;
+}
+/*End Welcome Section*/
+
+/*Start Header Section*/
+header{
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  
+  height: 19px;
+  padding: 25px 0x;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  background-color: black;
+  opacity: 0.7;
+  
+  z-index: 5;
+}
+header a{
+  margin-right: 2rem;
+  color: gray;
+  
+  text-decoration: none;
+  z-index: 5;
+}
+
+/*End Header Section*/
+</style>
 </head>
 <body>
-<div class="header"><h2 id="h2i">Legend Games</h2>
- <div><ul>
-       <li><a href="#">HOME</a></li>
-       <li><a href="#">PS3</a></li>
-       <li><a href="#">PS4</a></li>
-       <li><a href="#">PS5</a></li>
-       <li><a href="#">XBOX</a></li>
-       <li><a href="#">ABOUT US</a></li>
-       <li><a href="#">SERVICES</a></li>
-       <li><a href="#">OUR PRODUCTS</a></li>
-       <li><a href="#">FEEDBACK</a></li>
-  </ul>
+
+<!-- START HEADER SECTION -->
+
+
+<img src="https://i.pinimg.com/originals/f9/13/46/f9134655b53cbeaeb00664b04371b9b0.png"
+     height="200px"
+     width="225px">
+
+<header id="header">
+    <nav id="navbar">
+      <h3> Slash Kh &nbsp; &nbsp; &nbsp;
+        <a class="nav-link" href="#welcome-section">Hello!</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </h3>
+    </nav>
+  </header>
+
+<!--END HEADER SECTION-->
+
+
+
+<!-- Start Welcome Section-->
+<section id="welcome-section">
+  <h1 id="1head"> Slash Kh</h1> 
+  <h2> Web Developer</h2>
+</section>
+<!-- End Welcome Section-->
+
+
+<!-- Start Projects Section-->
+<section id="projects">
+  <h3> PortFolio</h3>
+  <div class="projects-grid">
+    a
+    <nav id="projectsbar">
+      
+      <a id="Youtube" class="project-tile" target="_blank" href="https://www.youtube.com/">YouTube</a>
+      <a id="profile-link" class="project-tile" target="_blank" href="https://www.freecodecamp.org/slashkh">FCC</a>
+    </nav>
   </div>
-  </div>  
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <footer><article id="line">This is my First Project that I have made and uploading to GitHub.io</article></footer>
-</body>
-</html>
+  <!-- End Projects Section-->
+  </body>
+  </html>
